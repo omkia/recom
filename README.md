@@ -24,7 +24,7 @@ To run the application, you will need:
 
 
 ```bash
-git clone https://github.com/omkia/Simple-Question-and-Result-System-for-Product-Selection.git
+git clone https://github.com/omkia/recom.git
 ```
 
 2. Open the index.html file in a web browser.
