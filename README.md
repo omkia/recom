@@ -1,5 +1,3 @@
-Sure, here is an updated README file for the GitHub repository that includes information about the application's main use case:
-
 ## Simple Question and Result System for Product Selection
 
 A simple web application that guides users through a series of questions to help them make informed decisions when purchasing new products. The application covers a wide range of categories, from electronics and home appliances to clothing and accessories. By answering the questions thoughtfully, users can gain insights into their preferences and requirements, ultimately leading to better purchasing decisions.
@@ -26,7 +24,7 @@ To run the application, you will need:
 
 
 ```bash
-git clone https://github.com/omkia/simple-question-and-result-system-for-product-selection.git
+git clone https://github.com/omkia/Simple-Question-and-Result-System-for-Product-Selection.git
 ```
 
 2. Open the index.html file in a web browser.
