@@ -1,21 +1,24 @@
 <?php
-$array = [1, 2, 3];
+// Initialize the array with size 4
+$array = array(1, 0, 0, 0);
 
-if (isset($_POST['array'])) {
-    $array = $_POST['array'];
-    $array[0] = 2;
-}
+// Check if a button is clicked and update the array accordingly
+if (isset($_POST['updateValue'])) {
+    $buttonClicked = $_POST['updateValue'];
 
-function implode($separator, $array) {
-    $result = "";
-    for ($i = 0; $i < count($array); $i++) {
-        if ($i > 0) {
-            $result .= $separator;
-        }
-        $result .= $array[$i];
+    if ($buttonClicked === 'button1') {
+        $array[0] ='MCI';
+    } elseif ($buttonClicked === 'button2') {
+        $array[0] = 'MTN';
     }
-    return $result;
-}
 
-echo implode(", ", $array);
+    // Start a session to pass the array to the next page
+    session_start();
+    $_SESSION['updatedArray'] = $array;
+
+    // Redirect to another HTML file
+    header("Location: result.php");
+	
+    exit();
+}
 ?>

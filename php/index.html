@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Array Manipulation</title>
+    <title>Question</title>
 </head>
 <body>
-    <h1>PHP Array Manipulation</h1>
 
-    <p>Original array:</p>
-    <?php include 'arrayData.php'; ?>
+<h1>Operator:</h1>
+<div id="arrayValues"><?php echo $array[0]; ?></div>
 
-    <p>Click the button to change the index 0 of the array to 2:</p>
-    <button onclick="changeArray()">Change Array</button>
+<button onclick="updateArray('button1')">MCI</button>
+<button onclick="updateArray('button2')">MTN</button>
 
-    <p>New array:</p>
-    <?php include 'arrayData.php'; ?>
+<script>
+    function updateArray(button) {
+        // Use AJAX to send the button clicked information to the server (PHP)
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // Redirect to another HTML file after receiving the response
+                window.location.href = 'result.php';
+            }
+        };
+        xmlhttp.open("POST", "arrayData.php", true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send("updateValue=" + button);
+    }
+</script>
 
-    <script>
-        function changeArray() {
-            document.getElementById('arrayForm').submit();
-        }
-    </script>
-
-    <form id="arrayForm" action="index.php" method="post">
-        <input type="hidden" name="array" value="<?php echo json_encode($array); ?>">
-    </form>
 </body>
 </html>
