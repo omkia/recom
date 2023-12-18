@@ -14,20 +14,28 @@ A simple web application that guides users through a series of questions to help
 
 To run the application, you will need:
 
+* **An internet connection:** The application requires an internet connection to access product information and recommendations.
+To run the application, you will need:
+
 * **A web browser:** The application is compatible with major web browsers, including Chrome, Firefox, Safari, and Edge.
 
-* **An internet connection:** The application requires an internet connection to access product information and recommendations.
+* **XAMPP:** The application requires XAMPP to run locally, as it utilizes PHP and MySQL databases.
 
 **Installation**
 
-1. Clone the repository to your local machine:
+1. Install XAMPP on your computer.
 
+2. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/omkia/recom.git
+git clone https://github.com/[your-username]/simple-question-and-result-system-for-product-selection.git
 ```
 
-2. Open the index.html file in a web browser.
+3. Start the Apache and MySQL modules in XAMPP.
+
+4. Copy the contents of the `htdocs` folder from the extracted XAMPP directory to the `htdocs` folder of the cloned repository.
+
+5. Open the index.html file in a web browser.
 
 ### Usage
 
@@ -46,6 +54,10 @@ git clone https://github.com/omkia/recom.git
 ### Contributing
 
 If you would like to contribute to the development of this application, please feel free to fork the repository and submit pull requests with your changes. We welcome contributions from anyone interested in improving the application's features or functionality.
+
+### License
+
+This project is licensed under the MIT License.
 
 ### License
 
