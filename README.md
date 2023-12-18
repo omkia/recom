@@ -1,14 +1,16 @@
-## Simple Question and Result System
+Sure, here is an updated README file for the GitHub repository that includes information about the application's main use case:
 
-A simple web application that presents a series of questions in a chosen category and then provides a summary of the user's answers. The application is designed to be intuitive and easy to use, making it suitable for a variety of purposes, including self-assessment, learning new concepts, or simply checking one's knowledge on a particular topic.
+## Simple Question and Result System for Product Selection
+
+A simple web application that guides users through a series of questions to help them make informed decisions when purchasing new products. The application covers a wide range of categories, from electronics and home appliances to clothing and accessories. By answering the questions thoughtfully, users can gain insights into their preferences and requirements, ultimately leading to better purchasing decisions.
 
 ### Features
 
-* **Interactive question-and-answer format:** The application prompts the user with a series of questions and provides options for each question. The user can select the answer that best corresponds to their knowledge or understanding.
+* **Targeted product recommendations:** Based on the user's answers, the application provides personalized product recommendations tailored to their needs and preferences.
 
-* **Categorized questions:** The application offers questions on various categories, allowing users to focus on specific areas of interest.
+* **Comparative product analysis:** Users can compare multiple products side-by-side based on their specifications and features, making it easier to choose the most suitable option.
 
-* **Summary of user responses:** Upon completion of the questionnaire, the application summarizes the user's responses and provides a general assessment of their knowledge.
+* **Clear and concise product information:** The application provides detailed information about each recommended product, including specifications, reviews, and user comparisons.
 
 ### Requirements
 
@@ -16,29 +18,32 @@ To run the application, you will need:
 
 * **A web browser:** The application is compatible with major web browsers, including Chrome, Firefox, Safari, and Edge.
 
-* **An internet connection:** The application requires an internet connection to access the question bank and provide the summary of user responses.
+* **An internet connection:** The application requires an internet connection to access product information and recommendations.
 
-### Installation
+**Installation**
 
 1. Clone the repository to your local machine:
 
+
 ```bash
-git clone https://github.com/omkia/Simple-Question-and-Result-System.git
+git clone https://github.com/omkia/simple-question-and-result-system-for-product-selection.git
 ```
 
 2. Open the index.html file in a web browser.
 
 ### Usage
 
-1. Select the desired category from the dropdown menu.
+1. Select the desired product category from the dropdown menu.
 
-2. Click the "Start Quiz" button to begin the questionnaire.
+2. Click the "Start Questionnaire" button to begin the product selection process.
 
-3. Read each question carefully and select the answer that best reflects your knowledge or understanding.
+3. Answer each question carefully, considering your needs and preferences.
 
-4. Click the "Submit Answer" button to proceed to the next question.
+4. Once you have answered all the questions, click the "Get Product Recommendations" button to receive tailored suggestions.
 
-5. Once you have answered all the questions, click the "Finish Quiz" button to receive a summary of your responses.
+5. Explore the recommended products, comparing their features and specifications.
+
+6. Click on individual product links to view detailed product information, reviews, and user comparisons.
 
 ### Contributing
 
