@@ -28,7 +28,7 @@ To run the application, you will need:
 2. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/[your-username]/simple-question-and-result-system-for-product-selection.git
+git clone https://github.com/omkia/recom.git
 ```
 
 3. Start the Apache and MySQL modules in XAMPP.
