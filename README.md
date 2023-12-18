@@ -23,7 +23,7 @@ To run the application, you will need:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone [https://github.com/omkia/Recom.git]
+git clone https://github.com/omkia/Recom.git
 ```
 
 2. Open the index.html file in a web browser.
