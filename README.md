@@ -58,7 +58,3 @@ If you would like to contribute to the development of this application, please f
 ### License
 
 This project is licensed under the MIT License.
-
-### License
-
-This project is licensed under the MIT License.
