@@ -12,13 +12,17 @@
 <?php
 // Start the session to access session variables
 session_start();
-
 // Check if the session variable is set
 if (isset($_SESSION['updatedArray'])) {
+    $handle = fopen("results.csv", "a");
+    $line=array(serialize($_SESSION['updatedArray']) , $_SESSION['pNumber'] , $_SESSION['result'],session_id());
+    fputcsv($handle, $line); # $line is an array of strings (array|string[])
+    fclose($handle);
     // Display the updated array value
-    echo '<div id="updatedArrayValue">' . $_SESSION['updatedArray'][0] . '</div>';
+echo '<div id="updatedArrayValue">' .'user preference: '. implode(",",$_SESSION['updatedArray']) .' <br>page number: '. $_SESSION['pNumber'] .' res= '. $_SESSION['result'].'</div>';
+
 } else {
-    echo '<div>No array value found.</div>';
+echo '<div>No array value found.</div>';
 }
 ?>
 
